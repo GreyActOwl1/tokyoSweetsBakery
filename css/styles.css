@@ -18301,6 +18301,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  height: 100%;
+}
+
 nav.navbar {
   width: 100vw;
   justify-content: flex-start;
@@ -18348,6 +18352,31 @@ footer a:hover {
 
 .no-border {
   border: none;
+}
+
+.parallax-background {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.parallax-container {
+  position: relative;
+  max-width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+.parallax-container h1 {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  color: white;
+  text-shadow: 0px 0px 4px black;
+  z-index: 1;
+}
+.parallax-container img {
+  min-height: 100%;
+  max-width: 150%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

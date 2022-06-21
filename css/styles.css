@@ -18301,5 +18301,53 @@ h3 {
     border-color: #dee2e6;
   }
 }
+nav.navbar {
+  width: 100vw;
+  justify-content: flex-start;
+}
+nav.navbar form {
+  flex-flow: nowrap;
+}
+@media (max-width: 576px) {
+  nav.navbar form {
+    max-width: 45vw;
+  }
+}
+nav.navbar li {
+  position: relative;
+  flex-shrink: 1;
+}
+nav.navbar li button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+@media (min-width: 768px) {
+  nav.navbar li:not(:nth-last-child(-n+2))::after {
+    content: "";
+    position: absolute;
+    top: 12.5%;
+    right: -2px;
+    width: 2px;
+    height: 75%;
+    background-color: black;
+  }
+}
+
+footer a {
+  color: rgba(0, 0, 0, 0.5);
+}
+footer a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.half-size {
+  width: 50%;
+}
+
+.no-border {
+  border: none;
+}
 
 /*# sourceMappingURL=styles.css.map */

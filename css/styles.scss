@@ -2,3 +2,51 @@
 // Modifications to Bootstrap scss variables and maps go here
 //example $primary: pink; would change the color of all elements that use the primary color
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+nav.navbar {
+  width: 100vw;
+  justify-content: flex-start;
+
+  form {
+    flex-flow: nowrap;
+    @media (max-width: 576px) {
+      max-width: 45vw;
+    }
+  }
+
+  li {
+    position: relative;
+    flex-shrink: 1;
+    button {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+    }
+  }
+  @media (min-width: 768px) {
+    li:not(:nth-last-child(-n + 2))::after {
+      content: "";
+      position: absolute;
+      top: 12.5%;
+      right: -2px;
+      width: 2px;
+      height: 75%;
+      background-color: black;
+    }
+  }
+}
+footer {
+  a {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  a:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+.half-size {
+  width: 50%;
+}
+.no-border {
+  border: none;
+}

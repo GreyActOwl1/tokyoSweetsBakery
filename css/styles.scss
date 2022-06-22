@@ -70,9 +70,36 @@ footer {
     text-shadow: 0px 0px 4px black;
     z-index: 1;
   }
-  img {
+  .parallax-img-background {
     min-height: 100%;
     max-width: 150%;
+    object-fit: cover;
+  }
+  .parallax-static {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 10%;
+    height: 60%;
+    max-width: 60%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .product-rating {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .product-rating .media-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow-y: scroll;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+  }
+  .product-rating img {
+    height: 100%;
     object-fit: cover;
   }
 }
@@ -145,6 +172,9 @@ a.decorated {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: scroll;
   a {
     font-style: italic;
     color: white;
@@ -153,4 +183,8 @@ a.decorated {
 .card-img-top {
   max-width: 100%;
   max-height: 100%;
+}
+.ratings-display {
+  text-shadow: none;
+  color: transparent;
 }

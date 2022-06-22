@@ -18404,10 +18404,12 @@ a.decorated:after {
   order: 1;
   width: 10%;
   justify-content: flex-end;
+  cursor: pointer;
 }
 .side-scrolling-display .side-scrolling-display-right {
   order: 3;
   width: 10%;
+  cursor: pointer;
 }
 .side-scrolling-display .side-scrolling-display-content {
   order: 2;

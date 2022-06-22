@@ -23,15 +23,18 @@ sideScrollingDisplays.forEach((display) => {
   let contentContainerWidth = window.innerWidth * 0.8;
   const contentChildren = Array.from(contentContainer.children);
   const contentChildWidth = contentChildren[0].clientWidth;
+  const numChildren = contentChildren.length;
   let numVisChildren = Math.floor(contentContainerWidth / contentChildWidth);
   let visibleRange = { left: 0, right: Math.min(numVisChildren, contentChildren.length) };
+  const potentialI = Array.from(Array(numChildren).keys());
 
   contentContainer.style.width = `${contentContainerWidth}px`;
   renderVisibleChildren();
   window.addEventListener("resize", () => {
     renderVisibleChildren();
   });
-
+  moveLeft.addEventListener("click", () => moveContents(-1));
+  moveRight.addEventListener("click", () => moveContents(+1));
   function renderVisibleChildren() {
     contentContainerWidth = window.innerWidth * 0.8;
     numVisChildren = Math.floor(contentContainerWidth / (contentChildWidth + 32)) || 1;
@@ -43,6 +46,23 @@ sideScrollingDisplays.forEach((display) => {
       }
     });
   }
-
-  console.log(contentChildren);
+  function moveContents(direction) {
+    visibleRange.left = visibleRange.left + direction;
+    visibleRange.right = visibleRange.right + direction;
+    numVisChildren;
+    potentialI;
+    let visArr = [];
+    for (let i = visibleRange.left; i < visibleRange.right; i++) {
+      visArr.push(potentialI[((i % numChildren) + numChildren) % numChildren]);
+    }
+    contentChildren.forEach((el, i) => {
+      if (el.classList.contains("hide-content")) el.classList.remove("hide-content");
+      el.style.order = -1;
+      if (visArr.includes(i)) {
+        el.style.order = visArr.indexOf(i);
+      } else {
+        el.classList.add("hide-content");
+      }
+    });
+  }
 });

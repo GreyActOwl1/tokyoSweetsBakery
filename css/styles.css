@@ -18331,10 +18331,10 @@ nav.navbar li button {
   nav.navbar li:not(:nth-last-child(-n+2))::after {
     content: "";
     position: absolute;
-    top: 12.5%;
+    top: 35%;
     right: -2px;
     width: 2px;
-    height: 75%;
+    height: 30%;
     background-color: black;
   }
 }
@@ -18362,6 +18362,7 @@ footer a:hover {
   position: relative;
   max-width: 100%;
   height: 50vh;
+  max-height: 500px;
   overflow: hidden;
 }
 .parallax-container h1 {
@@ -18377,6 +18378,87 @@ footer a:hover {
   min-height: 100%;
   max-width: 150%;
   object-fit: cover;
+}
+
+a.decorated {
+  min-width: 30%;
+}
+a.decorated:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 75%;
+  left: 0;
+  background-color: rgb(108, 117, 125);
+  z-index: -1;
+}
+
+.side-scrolling-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-scrolling-display .side-scrolling-display-left {
+  display: flex;
+  order: 1;
+  width: 10%;
+  justify-content: flex-end;
+}
+.side-scrolling-display .side-scrolling-display-right {
+  order: 3;
+  width: 10%;
+}
+.side-scrolling-display .side-scrolling-display-content {
+  order: 2;
+  width: 80%;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  overflow: hidden;
+}
+.side-scrolling-display .hide-content {
+  display: none;
+}
+
+.featured-products {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  flex-shrink: 0;
+}
+.featured-products img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.featured-products:hover .card-hover-reveal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-hover-reveal {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.card-hover-reveal a {
+  font-style: italic;
+  color: white;
+}
+
+.card-img-top {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

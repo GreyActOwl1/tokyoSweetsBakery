@@ -18498,4 +18498,27 @@ a.decorated:after {
   color: transparent;
 }
 
+.scroll-appear {
+  display: none;
+}
+
+.shop-search {
+  height: 40vh;
+  background-image: url("/img/brooke-lark-unsplash-search-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-search {
+  display: flex;
+  width: 80%;
+}
+
+.line-decoration {
+  width: 40%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /*# sourceMappingURL=styles.css.map */

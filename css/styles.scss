@@ -213,3 +213,65 @@ a.decorated {
   height: 4px;
   background-color: rgba(0, 0, 0, 0.3);
 }
+.card-tab {
+  color: black;
+}
+#current-selection {
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+}
+#pills-tabs {
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+}
+#pills-tabContent {
+  height: 100%;
+}
+.pill-link {
+  // set children not to accept pointer events allowing to easily detect what data to load
+  & > * {
+    pointer-events: none;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+  }
+}
+.pill-link.active {
+  .card-tab {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  p {
+    background-color: white;
+    text-decoration: underline;
+  }
+}
+a {
+  .card {
+    border: none;
+    img {
+      height: 170px;
+      object-fit: cover;
+    }
+  }
+}
+.product-information {
+  width: 300px;
+  img {
+    width: 200px;
+  }
+}
+.tab-pane {
+  a {
+    color: black;
+  }
+}
+#buy-now {
+  .modal-dialog {
+    width: 90%;
+    max-width: none;
+  }
+}
+#modal-buy-image {
+  max-width: 300px;
+}

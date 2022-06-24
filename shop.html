@@ -12,7 +12,7 @@
     <!-- endbuild -->
     <!-- fonts from google go bellow-->
   </head>
-  <body>
+  <body >
   <header class="sticky-top">
       <nav class="navbar navbar-expand-md navbar-light bg-light ">
         <a class="navbar-brand" href="/">TS Bakery</a>
@@ -72,12 +72,83 @@
                         </form>
                     </div>
                 </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col">
+                    <h2 class="col-12 display-6 display-md-4 text-center">Categories</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex justify-content-center mb-5"> 
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item mx-3" role="presentation">
+                            <a class="nav-link active p-0 pill-link" id="pills-bread-tab" data-toggle="pill" href="#pills-bread" role="tab" aria-controls="pills-bread" aria-selected="true" data-cat="bread">
+                                <div class="card d-none d-md-block" style="width: 250px;">
+                                    <img src="./img/wesual-click-rye-thumb.jpg" class="card-img-top" alt="breads">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title text-center card-tab py-2 mb-0">Breads</h5>
+                                    </div>
+                                </div>
+                                <p class="d-md-none">Breads</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3" role="presentation">
+                            <a class="nav-link p-0 pill-link" id="pills-pastery-tab" data-toggle="pill" href="#pills-pastery" role="tab" aria-controls="pills-pastery" aria-selected="false" data-cat="pastery">
+                                <div class="card d-none d-md-block" style="width: 250px;">
+                                    <img src="./img/kelly-visel-unsplash-taiyaki-thumb.jpg" class="card-img-top" alt="breads">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title text-center card-tab py-2 mb-0">Pasteries</h5>
+                                    </div>
+                                </div>
+                                <p class="d-md-none">Pasteries</p>
+                            </a>
+                        </li>
+                        <li class="nav-item p-0 mx-3" role="presentation">
+                            <a class="nav-link p-0 pill-link" id="pills-seasonal-tab" data-toggle="pill" href="#pills-seasonal" role="tab" aria-controls="pills-seasonal" aria-selected="false" data-cat="seasonal">
+                                <div class="card d-none d-md-block" style="width: 250px;">
+                                    <img src="./img/slashio-photography-unsplash-tart-thumb.jpg" class="card-img-top" alt="breads">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title text-center card-tab py-2 mb-0">Seasonal Items</h5>
+                                    </div>
+                                </div>
+                                <p class="d-md-none">Seasonal Items</p>
+                                </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="row"></div>
+            <div class="row no-gutters mb-5">
+                <div class="col-12 col-md-4 p-3" id="current-selection">
+                    <div>
+                        <h3>Fresh Bread</h3>
+                        <p>Order one of our daily made fresh breads for pick-up or delivery. Or just look at the goodness. You won't be able to resist. And don't worry we can keep a secret</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8 p-3 " id="pills-tabs">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-bread" role="tabpanel" aria-labelledby="pills-bread-tab">
+                        <a href="" data-toggle="modal" data-target="#buyNow">
+                            <div class="media product-information">
+                                <img src="./img/wesual-click-rye-thumb.jpg" class="mr-3" alt="Rye">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Rye</h5>
+                                    <p><span class="ratings-display" data-rating="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                                    <p>$15</p> 
+                                </div>
+                            </div> 
+                        </a>
+                        </div>
+                        <div class="tab-pane fade" id="pills-pastery" role="tabpanel" aria-labelledby="pills-pastery-tab">Pasteries</div>
+                        <div class="tab-pane fade" id="pills-seasonal" role="tabpanel" aria-labelledby="pills-seasonal-tab">Seasonal</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
+
       <footer class="container-fluid">
         <div class="row">
           <div class="col-12  col-md-4">
@@ -107,13 +178,50 @@
               <a class="nav-link text-center" href="https://instagram.com" target="_blank">Instagram</a>
           </div>
         </div>
-      </footer>
     </footer>
+    <div class="modal fade" id="buyNow" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                <div class="media">
+                    <img src="./img/wesual-click-rye-thumb.jpg" class="mr-3" alt="Rye" id="modal-buy-image">
+                    <div class="media-body">
+                        <h5 class="mt-0" id="modal-buy-name">Media heading</h5>
+                        <p><span class="ratings-display" data-rating="4.2" id="modal-buy-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p> 
+                        <p id="modal-buy-price">$15</p>
+                        <p id="modal-buy-description">This rustic, artisanal, healthy,... forget that it is delicous and freshly made</p>
+                        <button class="btn btn-secondary">Add To Cart</button>
+                    </div>
+                </div>                
+                <section class="my-5" id="review-section">
+                    <h5 class="display-3">Reviews</h5>
+                    <div id="modal-buy-reviews">
+                        <div class="media">
+                            <img src="./img/GAN-bob-smith.jpg" class="align-self-center mr-3 avatar-image" alt="GAN-generated-image">
+                            <div>
+                                <h6>Bob Smith</h6>
+                                <p>june 24, 2024</p>
+                                <p><span class="ratings-display" data-rating="4.2" id="modal-buy-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p> 
+                            </div>
+                            <div class="media-body">
+                                <p>Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./js/scripts.js" type="module"></script>
+    <script src="./js/shop-scripts.js" type="module"></script>
     <!-- endbuild -->
   </body>
 </html>

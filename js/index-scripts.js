@@ -70,10 +70,10 @@ sideScrollingDisplays.forEach((display) => {
 const ratings = document.querySelectorAll(".ratings-display");
 ratings.forEach((rating) => {
   const percent = (Number(rating.dataset.rating) / 5) * 100;
-  rating.style.background = `linear-gradient(0.25turn, #e8b430 0 ${percent}%, rgba(0, 0, 0, 0) ${percent}% 100%)`;
+  rating.style.background = `linear-gradient(0.25turn, #e8b430 0 ${percent}%, rgba(0, 0, 0, 0.3) ${percent}% 100%)`;
   rating.style["background-clip"] = "text";
 });
-// Hideing and showing nav searchbar on shop.html
+// Hiding and showing nav searchbar on shop.html
 window.addEventListener("scroll", () => {
   if (window.scrollY > window.innerHeight * 0.2) {
     document.querySelector(".scroll-appear").style.display = "block";

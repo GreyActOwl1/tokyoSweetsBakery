@@ -1,0 +1,24 @@
+h1, h2, h3, body {
+    font-family: "Open Sans", sans-serif;
+}
+
+}
+
+h2 {
+    color: #c5af30;
+}
+
+footer {
+    background-color: #1cad5d;
+    padding: 20px 0;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: #1cad5d;
+}

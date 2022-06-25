@@ -1,145 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <title> Tokyo Sweets & Bakery </title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-               <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="3"><i class="fa fa-info fa-lg"></i> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Shop</li>
-                        <li class="nav-item active"><a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i> Cart</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TokyoSweetsBakery</title>
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <!-- fonts from google go bellow-->
+  </head>
+  <body>
+  <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">TS Bakery</a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline me-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+              <span class="d-sm-none"><i class="fa fa-search"></i></span><span class="d-none d-sm-block">Search</span>
+            </button>
+          </form>
+          <button class="btn btn-secondary ml-sm-2">
+            <i class="fa fa-shopping-cart"></i> <span class="d-inline d-md-none d-lg-inline">Your Cart</span>
+          </button>
+      </nav>
+    </header>
+    <main>
+    <div class="containter">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" >
+                    <div class="card-header">
+                      Summary
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Enter Coupon Code:</li>
+                      <li class="list-group-item">Subtotal:$500</li>
+                      <li class="list-group-item">Taxes:$26</li>
+                      <li class="list-group-item">Total:526</li>
                     </ul>
-              </div>
+                </div>
             </div>
-        </nav>    
-
-         <!-- Shopping cart table -->
-            <div class="table-responsive mt-3">
-                <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Remove</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><div class="container">
-                            <div class="row row-content align-items-center">
-                                <div class="col-sm-4 order-sm-last col-md-3">        
-                                </div>
-                                <div class="col">
-                                    <div class="media">
-                                        <img class="d-flex mr-3 w-25 h-25 img-thumbnail" src="https://afewshortcuts.com/wp-content/uploads/2017/10/monster-cookies-1-4-500x500.jpg" alt="cookies"/>
-                                        <div class="media-body align-self-center">
-                                            <h3>Monster Cookies</h3>
-                                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="col">
+                <div class="table-responsive mt-3">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Remove</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><div class="container">
+                                <div class="row row-content align-items-center">
+                                    <div class="col-sm-4 order-sm-last col-md-3">        
+                                    </div>
+                                    <div class="col">
+                                        <div class="media">
+                                            <img class="d-flex mr-3 w-25 h-25 img-thumbnail" src="https://afewshortcuts.com/wp-content/uploads/2017/10/monster-cookies-1-4-500x500.jpg" alt="cookies"/>
+                                            <div class="media-body align-self-center">
+                                                <h3>Monster Cookies</h3>
+                                                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                            </div>
                                         </div>
                                     </div>
+                                </div> </td>
+                            <td>$15.00</td>
+                            <td><form action="/action_page.php">
+                                <div class="form-group">
+                                  <label for="selectQuantity"></label>
+                                  <select class="form-control" id="selectQuantity" name="sellist1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>                              
                                 </div>
-                            </div> </td>
-                        <td>$15.00</td>
-                        <td><form action="/action_page.php">
-                            <div class="form-group">
-                              <label for="selectQuantity"></label>
-                              <select class="form-control" id="selectQuantity" name="sellist1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                              </select>                              
-                            </div>
-                          </form></td>
-                          <td><button type="button" class="btn"><i class="fa fa-lg fa-trash" aria-hidden="true"></i></button></td>
-                      </tr>
-                      <tr>
-                        <td><div class="container">
-                            <div class="row row-content align-items-center">
-                                <div class="col-sm-4 order-sm-last col-md-3">        
-                                </div>
-                                <div class="col">
-                                    <div class="media">
-                                        <img class="d-flex mr-3 w-25 h-25 img-thumbnail" src="https://www.friars.co.uk/images/friars-hand-made-chocolate-assortment-24-chocolates-p692-12449_related.jpg" alt="cookies"/>
-                                        <div class="media-body align-self-center">
-                                            <h3>Chocolate Set</h3>
-                                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                              </form></td>
+                              <td><button type="button" class="btn"><i class="fa fa-lg fa-trash" aria-hidden="true"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td><div class="container">
+                                <div class="row row-content align-items-center">
+                                    <div class="col-sm-4 order-sm-last col-md-3">        
+                                    </div>
+                                    <div class="col">
+                                        <div class="media">
+                                            <img class="d-flex mr-3 w-25 h-25 img-thumbnail" src="https://www.friars.co.uk/images/friars-hand-made-chocolate-assortment-24-chocolates-p692-12449_related.jpg" alt="cookies"/>
+                                            <div class="media-body align-self-center">
+                                                <h3>Chocolate Set</h3>
+                                                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div> </td>
-                        <td>$15.00</td>
-                        <td>2</td>
-                      </tr>
-                      <tr>
-                        <td><div class="container">
-                            <div class="row row-content align-items-center">
-                                <div class="col-sm-4 order-sm-last col-md-3">        
-                                </div>
-                                <div class="col">
-                                    <div class="media">
-                                        <img class="d-flex mr-3 w-25 h-25 img-thumbnail" src="https://archziner.com/wp-content/uploads/2017/11/chocolate-cupcakes-images-several-chocolate-cupcakes-with-chocolate-frosting-decorated-with-fondant-holly-plants-on-colorful-trey.jpg" alt="cupcajes"/>
-                                        <div class="media-body align-self-center">
-                                            <h3>Cupcakes</h3>
-                                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div> </td>
+                            <td>$15.00</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td><div class="container">
+                                <div class="row row-content align-items-center">
+                                    <div class="col-sm-4 order-sm-last col-md-3">        
+                                    </div>
+                                    <div class="col">
+                                        <div class="media">
+                                            <img class="d-flex mr-3 w-25 h-25 img-thumbnail" src="https://archziner.com/wp-content/uploads/2017/11/chocolate-cupcakes-images-several-chocolate-cupcakes-with-chocolate-frosting-decorated-with-fondant-holly-plants-on-colorful-trey.jpg" alt="cupcajes"/>
+                                            <div class="media-body align-self-center">
+                                                <h3>Cupcakes</h3>
+                                                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div> </td>
-                        <td>$15.00</td>
-                        <td>3</td>
-                      </tr>
-                    </tbody>
-            
-                </table>
+                                </div> </td>
+                            <td>$15.00</td>
+                            <td>3</td>
+                          </tr>
+                        </tbody>
+                
+                    </table>
+                </div>
+        
             </div>
         </div>
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">             
-                    <div class="col-4 col-sm-2 offset-1">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Cart</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-sm-5">
-                        <h5>Social</h5>
-                        <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234<br />
-                          <i class="fa fa-envelope fa-lg text-primary"></i> campsites@nucamp.co
-                    </div>                
-               </div>
             </div>
-        </footer>
-    
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    </body>
 
+    </main>
+    <footer>
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-12  col-md-4">
+              <div class="card no-border flex-row flex-md-column">
+                  <img src="./img/sharon-tay-unsplash-store-thumb.png" alt="our store" class="card-img-top half-size">
+                  <div class="card-body px-md-0 d-flex align-items-center">
+                      <p >1234 Payne Street, Pocahontas, VA 24605, USA</p>
+                  </div>
+              </div>
+              <div >
+                <p>&copy; Tokyo Sweets Bakery</p>
+              </div>
+          </div>
+          <div class="col-12 align-items-start col-md-4 d-flex-column align-items-md-center">
+            <h3 class="text-md-center">MAIN MENU</h3>
+            <ul class="nav d-flex flex-md-column">
+              <a class="nav-link text-center active" href="#">Home </a>
+              <a class="nav-link text-center" href="#">About</a>
+              <a class="nav-link text-center" href="#">Shop</a>
+              <a class="nav-link text-center" href="#">Help</a>
+          </div>
+           <div class="col-12 align-items-start col-md-4 d-flex-column align-items-md-center">
+            <h3 class="text-md-center">FIND US ON</h3>
+            <ul class="nav d-flex flex-md-column">
+              <a class="nav-link text-center active" href="https://facebook.com" target="_blank">Facebook </a>
+              <a class="nav-link text-center" href="https://twitter.com" target="_blank">Twitter</a>
+              <a class="nav-link text-center" href="https://instagram.com" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/scripts.js" type="module"></script>
+    <!-- endbuild -->
+  </body>
 </html>

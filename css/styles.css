@@ -18312,8 +18312,12 @@ nav.navbar {
 nav.navbar form {
   flex-flow: nowrap;
 }
+nav.navbar form input {
+  flex-shrink: 1;
+}
 @media (max-width: 576px) {
   nav.navbar form {
+    flex-wrap: nowrap;
     max-width: 45vw;
   }
 }
@@ -18580,17 +18584,42 @@ a .card img {
   width: 200px;
 }
 
+.tab-content > .active {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .tab-pane a {
   color: black;
 }
 
-#buy-now .modal-dialog {
+#buyNow .modal-dialog {
   width: 90%;
   max-width: none;
 }
 
 #modal-buy-image {
   max-width: 300px;
+  width: 100%;
+}
+
+#modal-buy-reviews .media {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#modal-buy-reviews .media img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+#modal-buy-reviews .media .media-body {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  #modal-buy-reviews .media .media-body {
+    flex-basis: 0%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

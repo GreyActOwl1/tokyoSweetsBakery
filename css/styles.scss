@@ -11,7 +11,11 @@ nav.navbar {
 
   form {
     flex-flow: nowrap;
+    input {
+      flex-shrink: 1;
+    }
     @media (max-width: 576px) {
+      flex-wrap: nowrap;
       max-width: 45vw;
     }
   }
@@ -261,17 +265,38 @@ a {
     width: 200px;
   }
 }
+.tab-content > .active {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 .tab-pane {
   a {
     color: black;
   }
 }
-#buy-now {
-  .modal-dialog {
-    width: 90%;
-    max-width: none;
-  }
+#buyNow .modal-dialog {
+  width: 90%;
+  max-width: none;
 }
 #modal-buy-image {
   max-width: 300px;
+  width: 100%;
+}
+#modal-buy-reviews {
+  .media {
+    gap: 1rem;
+    flex-wrap: wrap;
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+    .media-body {
+      flex-basis: 100%;
+      @media (min-width: 768px) {
+        flex-basis: 0%;
+      }
+    }
+  }
 }

@@ -370,6 +370,7 @@ function generateProductCards(productArr, catDiv) {
   });
   catDiv.innerHTML = "";
   catDiv.appendChild(fragment);
+  colorStars();
 
   function setModal(product) {
     modalBuyIds.img.src = product.img;
@@ -400,4 +401,3 @@ function generateProductCards(productArr, catDiv) {
 }
 //on load functions
 generateProductCards(data.products["bread"], pillsContent["bread"]);
-colorStars();

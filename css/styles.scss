@@ -85,12 +85,21 @@ footer {
   .parallax-static {
     position: absolute;
     z-index: 1;
-    top: 20%;
+    top: 10%;
     left: 10%;
-    height: 60%;
-    max-width: 60%;
+    height: 80%;
+    max-width: 80%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.75);
+    img {
+      max-width: 25%;
+    }
+    @media (min-width: 576px) {
+      top: 20%;
+      left: 10%;
+      height: 60%;
+      max-width: 60%;
+    }
   }
   .product-rating {
     max-width: 100%;
@@ -100,7 +109,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    height: auto;
     overflow-y: scroll;
     color: white;
     text-shadow: 0px 0px 2px black;

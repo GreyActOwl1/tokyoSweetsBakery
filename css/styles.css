@@ -18301,16 +18301,36 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  height: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+}
+
+.row {
+  max-width: 1600px;
+}
+
+.col {
+  max-width: 1600px;
+}
+
 nav.navbar {
-  width: 100vw;
+  width: 100%;
   justify-content: flex-start;
 }
 nav.navbar form {
   flex-flow: nowrap;
 }
+nav.navbar form input {
+  flex-shrink: 1;
+}
 @media (max-width: 576px) {
   nav.navbar form {
-    max-width: 45vw;
+    flex-wrap: nowrap;
+    max-width: 45%;
   }
 }
 nav.navbar li {
@@ -18327,10 +18347,10 @@ nav.navbar li button {
   nav.navbar li:not(:nth-last-child(-n+2))::after {
     content: "";
     position: absolute;
-    top: 12.5%;
+    top: 35%;
     right: -2px;
     width: 2px;
-    height: 75%;
+    height: 30%;
     background-color: black;
   }
 }
@@ -18348,6 +18368,281 @@ footer a:hover {
 
 .no-border {
   border: none;
+}
+
+.parallax-background {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  max-height: 500px;
+  overflow: hidden;
+}
+.parallax-container h1 {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  color: white;
+  text-shadow: 0px 0px 4px black;
+  z-index: 1;
+}
+.parallax-container .parallax-img-background {
+  min-height: 100%;
+  width: 150%;
+  object-fit: cover;
+}
+.parallax-container .parallax-static {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  max-width: 80%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.parallax-container .parallax-static img {
+  max-width: 25%;
+}
+@media (min-width: 576px) {
+  .parallax-container .parallax-static {
+    top: 20%;
+    left: 10%;
+    height: 60%;
+    max-width: 60%;
+  }
+}
+.parallax-container .product-rating {
+  max-width: 100%;
+  max-height: 100%;
+}
+.parallax-container .product-rating .media-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  overflow-y: scroll;
+  color: white;
+  text-shadow: 0px 0px 2px black;
+}
+.parallax-container .product-rating img {
+  height: 100%;
+  object-fit: cover;
+}
+
+a.decorated {
+  min-width: 30%;
+}
+a.decorated:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 75%;
+  left: 0;
+  background-color: rgb(108, 117, 125);
+  z-index: -1;
+}
+
+.side-scrolling-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-scrolling-display .side-scrolling-display-left {
+  display: flex;
+  order: 1;
+  width: 10%;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.side-scrolling-display .side-scrolling-display-right {
+  order: 3;
+  width: 10%;
+  cursor: pointer;
+}
+.side-scrolling-display .side-scrolling-display-content {
+  order: 2;
+  width: 80%;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  overflow: hidden;
+}
+.side-scrolling-display .hide-content {
+  display: none;
+}
+
+.featured-products {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  flex-shrink: 0;
+}
+.featured-products img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.featured-products:hover .card-hover-reveal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-hover-reveal {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: scroll;
+}
+.card-hover-reveal a {
+  font-style: italic;
+  color: white;
+}
+
+.card-img-top {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ratings-display {
+  text-shadow: none;
+  color: transparent;
+}
+
+.scroll-appear {
+  display: none;
+}
+
+.shop-search {
+  height: 50vh;
+  background-image: url("/img/brooke-lark-unsplash-search-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .shop-search {
+    height: 40vh;
+  }
+}
+
+.main-search {
+  display: flex;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .main-search {
+    width: 80%;
+  }
+}
+
+.line-decoration {
+  width: 40%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card-tab {
+  color: black;
+}
+
+#current-selection {
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+#pills-tabs {
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+#pills-tabContent {
+  height: 100%;
+}
+
+.pill-link > * {
+  pointer-events: none;
+}
+.pill-link p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.pill-link.active .card-tab {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.pill-link.active p {
+  background-color: white;
+  text-decoration: underline;
+}
+
+a .card {
+  border: none;
+}
+a .card img {
+  height: 170px;
+  object-fit: cover;
+}
+
+.product-information {
+  width: 300px;
+}
+.product-information img {
+  width: 200px;
+}
+
+.tab-content > .active {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tab-pane a {
+  color: black;
+}
+
+#buyNow .modal-dialog {
+  width: 90%;
+  max-width: none;
+}
+
+#modal-buy-image {
+  max-width: 300px;
+  width: 100%;
+}
+
+#modal-buy-reviews .media {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#modal-buy-reviews .media img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+#modal-buy-reviews .media .media-body {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  #modal-buy-reviews .media .media-body {
+    flex-basis: 0%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

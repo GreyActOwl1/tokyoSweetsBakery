@@ -13,8 +13,8 @@
     <!-- fonts from google go bellow-->
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-md navbar-light bg-light ">
         <a class="navbar-brand" href="#">TS Bakery</a>
         <form class="form-inline me-auto">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
@@ -42,7 +42,7 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
+              <a class="nav-link" href="/shop.html">Shop</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Help</a>
@@ -56,7 +56,94 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="row parallax-background mx-0 ">
+            <div class="col-12 col-md-10 offset-md-1 ">
+                <div class="parallax-container">
+                    <h1 class="parallax" data-rate=".75" data-offset=".25" data-cover="false">Tokyo Sweets Bakery</h1>
+                    <img src="./img/yeh-xintong-unsplash-hero.jpg" alt="baked goods display" class="parallax parallax-img-background" data-rate="-.25" data-cover="true">
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5 mx-0 ">
+            <div class="col position-relative d-flex justify-content-center">
+                <a class="btn btn-secondary btn-lg decorated" href="/shop.html">Shop Now</a>
+            </div>
+        </div>
+    
+        <div class="row my-5">
+            <div class="col">
+                <h2 class="mt-5 mb-3 text-center">Featured Products</h2>
+                <div class="side-scrolling-display">
+                    <div class="side-scrolling-display-left">
+                        <div class="span">&lt;</div>
+                    </div>
+                    <div class="side-scrolling-display-right">&gt;</div>
+                    <div class="side-scrolling-display-content">
+
+                        <div class="card featured-products position-relative">
+                            <img src="./img/slashio-photography-unsplash-donuts-small.png" alt="donuts" >
+                            <div class="card-body card-hover-reveal">
+                                <h5 class="card-title">Artisan Donuts Pack</h5>
+                                <p>Try our signature pack of artisan donuts and you'll never be able to go back to Dunkin. </p>
+                                <p><a href="#" class="btn btn-link ">$25 <i class="fa fa-shopping-cart"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="card featured-products position-relative">
+                            <img src="./img/kelly-visel-unsplash-taiyaki-thumb.jpg" alt="taiyaki" >
+                            <div class="card-body card-hover-reveal">
+                                <h5 class="card-title">Taiyaki</h5>
+                                <p>Try this traditional Japanses pastery. Three fillings available.</p>
+                                <p><a href="#" class="btn btn-link ">$25 <i class="fa fa-shopping-cart"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="card featured-products position-relative">
+                            <img src="./img/swapnil-dwivedi-unsplash-cake-thumb.jpg" alt="cake" >
+                            <div class="card-body card-hover-reveal">
+                                <h5 class="card-title">Milk Cake </h5>
+                                <p>Make a statement with this stunning cake. It will wow your guests with every bite.</p>
+                                <p><a href="#" class="btn btn-link ">$40 <i class="fa fa-shopping-cart"></i></a></p>
+                            </div>
+                        </div>
+
+                        <div class="card featured-products position-relative">
+                            <img src="./img/wesual-click-rye-thumb.jpg" alt="Rye" >
+                            <div class="card-body card-hover-reveal">
+                                <h5 class="card-title">Rustic Rye</h5>
+                                <p>Baked fresh every day. Get a hearty bread for hearty health.</p>
+                                <p><a href="#" class="btn btn-link ">$15 <i class="fa fa-shopping-cart"></i></a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <div class="parallax-container">
+                    
+                    <img src="./img/joshua-bartell-unsplash-wood-bg.jpg" alt="bg-image" class="parallax parallax-img-background" data-rate="-.25" data-cover="true">
+                    
+                    
+                    <div class="parallax-static">
+                        <div class="media product-rating p-3">
+                            <img src="./img/slashio-photography-unsplash-tart-thumb.jpg" alt="berry tart" class="mr3">
+                           
+                        
+                            <div class="media-body ml-3 py-3">
+                                <h5>Berry Tart</h5>
+                                <p>What better way to celebrate the season than one of our very berry best tarts. Bite into this delicious display but don't let anyone see you. They will be jealous.</p>
+                                <p><span class="ratings-display" data-rating="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+        </div>
+    </main>
     <footer>
       <footer class="container-fluid">
         <div class="row">
@@ -74,17 +161,17 @@
           <div class="col-12 align-items-start col-md-4 d-flex-column align-items-md-center">
             <h3 class="text-md-center">MAIN MENU</h3>
             <ul class="nav d-flex flex-md-column">
-              <a class="nav-link text-center active" href="#">Home </a>
+              <a class="nav-link pl-0 text-center active pl-md-3" href="#">Home </a>
               <a class="nav-link text-center" href="#">About</a>
-              <a class="nav-link text-center" href="#">Shop</a>
+              <a class="nav-link text-center" href="/shop.html">Shop</a>
               <a class="nav-link text-center" href="#">Help</a>
           </div>
            <div class="col-12 align-items-start col-md-4 d-flex-column align-items-md-center">
             <h3 class="text-md-center">FIND US ON</h3>
             <ul class="nav d-flex flex-md-column">
-              <a class="nav-link text-center active" href="https://facebook.com" target="_blank">Facebook </a>
-              <a class="nav-link text-center" href="https://twitter.com" target="_blank">Twitter</a>
-              <a class="nav-link text-center" href="https://instagram.com" target="_blank">Instagram</a>
+              <a class="nav-link pl-0 text-md-center active pl-md-3" href="https://facebook.com" target="_blank">Facebook </a>
+              <a class="nav-link text-md-center" href="https://twitter.com" target="_blank">Twitter</a>
+              <a class="nav-link text-md-center" href="https://instagram.com" target="_blank">Instagram</a>
           </div>
         </div>
       </footer>
@@ -93,7 +180,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./js/scripts.js" type="module"></script>
+    <script src="./js/index-scripts.js" type="module"></script>
     <!-- endbuild -->
   </body>
 </html>

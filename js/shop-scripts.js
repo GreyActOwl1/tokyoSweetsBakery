@@ -19,7 +19,75 @@ const data = {
   products: {
     bread: [
       {
-        id: "b1",
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
         name: "Rye",
         rating: "4.2",
         price: "$15",
@@ -43,8 +111,194 @@ const data = {
         ],
       },
     ],
-    pastery: [{}],
-    seasonal: [{}],
+    pastery: [
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+    ],
+    seasonal: [
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+      {
+        name: "Rye",
+        rating: "4.2",
+        price: "$15",
+        img: "./img/wesual-click-rye-thumb.jpg",
+        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        reviews: [
+          {
+            avatar: "./img/GAN-bob-smith.jpg",
+            user: "Bob Smith",
+            date: "june 24, 2024",
+            rating: "5.0",
+            review: "Five out of FIVE. This place is the best bakery I have ever been to... And you can tell by the line",
+          },
+          {
+            avatar: "./img/GAN-jane-doe.jpg",
+            user: "Jane Doe",
+            date: "june 24, 2024",
+            rating: "4.5",
+            review: "It was delicious. But the place gets crowded at times.",
+          },
+        ],
+      },
+    ],
   },
 };
 const pillLinks = document.querySelectorAll(".pill-link");
@@ -74,55 +328,6 @@ pillLinks.forEach((link) => {
     selectionContainer.appendChild(catDescription);
     //append products
     generateProductCards(data.products[currentCat], pillsContent[currentCat]);
-
-    //********* */
-    // const fragment = new DocumentFragment();
-    // data.products[currentCat].forEach((product) => {
-    //   let productCard = document.createElement("a");
-    //   productCard.setAttribute("data-toggle", "modal");
-    //   productCard.setAttribute("data-target", "#buyNow");
-    //   productCard.innerHTML = `<div class="media product-information">
-    //                             <img src=${product.img} class="mr-3" alt=${product.name}>
-    //                             <div class="media-body">
-    //                                 <h5 class="mt-0">${product.name}</h5>
-    //                                 <p><span class="ratings-display" data-rating=${product.rating}><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-    //                                 <p>${product.price}</p>
-    //                             </div>
-    //                         </div>`;
-    //   productCard.addEventListener("click", () => setModal(product));
-    //   fragment.appendChild(productCard);
-    // });
-    // pillsContent[currentCat].innerHTML = "";
-    // pillsContent[currentCat].appendChild(fragment);
-    // colorStars();
-
-    // function setModal(product) {
-    //   modalBuyIds.img.src = product.img;
-    //   modalBuyIds.img.alt = product.name;
-    //   modalBuyIds.name.innerText = product.name;
-    //   modalBuyIds.price.innerText = product.price;
-    //   modalBuyIds.description.innerText = product.description;
-    //   modalBuyIds.rating.setAttribute("data-rating", product.rating);
-    //   modalBuyIds.reviews.innerHTML = "";
-    //   const reviewFragment = new DocumentFragment();
-    //   product.reviews.forEach((review) => {
-    //     const reviewDiv = document.createElement("div");
-    //     reviewDiv.classList.add("media");
-    //     reviewDiv.innerHTML = ` <img src=${review.avatar} class="align-self-center mr-3 avatar-image " alt="GAN-generated-image">
-    //                         <div >
-    //                             <h6>${review.user}</h6>
-    //                             <p>${review.date}</p>
-    //                             <p><span class="ratings-display" data-rating=${review.rating} id="modal-buy-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-    //                         </div>
-    //                         <div class="media-body ">
-    //                             <p>${review.review}</p>
-    //                         </div>`;
-    //     reviewFragment.appendChild(reviewDiv);
-    //   });
-    //   modalBuyIds.reviews.appendChild(reviewFragment);
-    //   colorStars();
-    // }
-    // *****************
   });
 });
 
@@ -165,7 +370,6 @@ function generateProductCards(productArr, catDiv) {
   });
   catDiv.innerHTML = "";
   catDiv.appendChild(fragment);
-  colorStars();
 
   function setModal(product) {
     modalBuyIds.img.src = product.img;
@@ -194,3 +398,6 @@ function generateProductCards(productArr, catDiv) {
     colorStars();
   }
 }
+//on load functions
+generateProductCards(data.products["bread"], pillsContent["bread"]);
+colorStars();

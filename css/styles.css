@@ -18303,10 +18303,13 @@ h3 {
 }
 body {
   height: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav.navbar {
-  width: 100vw;
+  width: 100%;
   justify-content: flex-start;
 }
 nav.navbar form {

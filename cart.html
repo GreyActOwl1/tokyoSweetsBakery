@@ -79,10 +79,30 @@
                       <div class="card-header">
                         Summary
                       </div>
+                      <div id="couponAccordion">
+                      
+                          <div class="card" id="couponHeading">
+                            <h5 class="mb-0 px-1">
+                              <button class="btn" data-toggle="collapse" data-target="#couponCollapse" aria-expanded="false" aria-controls="couponCollapse">
+                               Coupon Code:
+                               <i class="fa fa-angle-down fa-lg"></i>
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="couponCollapse" class="collapse hide" aria-labelledby="couponHeading" data-parent="#couponAccordion">
+                            <div class="card-body">
+                              <div class="form-group">
+                                <label for="couponInput" class="col-form-label"></label>
+                                <input type="text" class="form-control" placeholder="Enter Code" id="couponInput">
+                            </div>
+                            </div>
+                          </div>
+                        
+                      </div>
                       
                      
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Enter Coupon Code:</li>
+                      <ul class="list-group list-group-flush">                       
                         <li class="list-group-item">Subtotal:$45</li>
                         <li class="list-group-item">Taxes:$12</li>
                         <li class="list-group-item">Total:$57</li>
@@ -242,5 +262,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/scripts.js" type="module"></script>
     <!-- endbuild -->
+    
+  
   </body>
 </html>

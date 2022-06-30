@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- endbuild -->
+      <!-- endbuild -->
+    <style>
+     #price {
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style> 
     <!-- fonts from google go bellow-->
   </head>
   <body>
@@ -68,11 +74,13 @@
       </nav>
       <div class="containter">
           <div class="row">
-              <div class="col-sm-4 mt-3 order-md-last">
+              <div class="col-sm-4 mt-3 order-sm-last">
                   <div class="card" >
                       <div class="card-header">
                         Summary
                       </div>
+                      
+                     
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">Enter Coupon Code:</li>
                         <li class="list-group-item">Subtotal:$45</li>
@@ -82,16 +90,8 @@
                   </div>
               </div>
               <div class="col">
-                  <div class="table-responsive mt-3">
-                      <table class="table table-hover">
-                          <thead>
-                            <tr>
-                              <th>Product</th>
-                              <th>Price</th>
-                              <th>Quantity</th>
-                              <th>Remove</th>
-                            </tr>
-                          </thead>
+                  <div class="table-responsive-sm mt-3">
+                      <table class="table table-hover">                
                           <tbody>
                             <tr>
                               <td>
@@ -109,22 +109,21 @@
                                   </div>
                                 </div> 
                                 </td>
-                              <td>$15.00</td>
+                                <td id="price"><p>$15.00</p></td>
                               <td>
                                 <form>
-                                  <div class="form-group">
+                                  <div class="form-group my-5">
                                     <label for="selectQuantity"></label>
                                     <select class="form-control" id="selectQuantity" name="sellist1">
-                                      <option>1</option>
+                                      <option>Delete</option>
+                                      <option selected>1</option>
                                       <option>2</option>
                                       <option>3</option>
                                       <option>4</option>
                                     </select>                              
                                   </div>
                                 </form>
-                              </td>
-                                <td><button type="button" class="btn"><i class="fa fa-lg fa-trash" aria-hidden="true"></i></button>
-                              </td>
+                              </td>                                
                             </tr>
                             <tr>
                               <td>
@@ -140,10 +139,12 @@
                                           </div>
                                       </div>
                                   </div> </td>
-                              <td>$15.00</td>
+                              <td id="price"> 
+                                $15.00
+                              </td>
                               <td>
                                 <form>
-                                  <div class="form-group">
+                                  <div class="form-group my-5">
                                     <label for="selectQuantity"></label>
                                     <select class="form-control" id="selectQuantity" name="sellist2">
                                       <option>1</option>
@@ -153,9 +154,7 @@
                                     </select>                              
                                   </div>
                                 </form>
-                              </td>
-                                <td><button type="button" class="btn"><i class="fa fa-lg fa-trash" aria-hidden="true"></i></button>
-                              </td>
+                              </td>                                
                             </tr>
                             <tr>
                               <td>
@@ -163,7 +162,7 @@
                                   <div class="row row-content align-items-center">                          
                                       <div class="col">
                                           <div class="media">
-                                              <img class="d-flex mr-3 w-25 h-25 img-thumbnail" src="https://archziner.com/wp-content/uploads/2017/11/chocolate-cupcakes-images-several-chocolate-cupcakes-with-chocolate-frosting-decorated-with-fondant-holly-plants-on-colorful-trey.jpg" alt="cupcajes"/>
+                                              <img class="d-flex mr-3 w-25 h-25 img-thumbnail" src="https://whyzee.com.sg/wp-content/uploads/2020/11/Nutella-Cupcakes.jpg" alt="cupcajes"/>
                                               <div class="media-body align-self-center">
                                                   <h3>Cupcakes</h3>
                                                   <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -171,10 +170,12 @@
                                           </div>
                                       </div>
                                   </div> </td>
-                              <td>$15.00</td>
+                                  <td id="price"> 
+                                    $15.00
+                                  </td>
                               <td>
                                 <form>
-                                  <div class="form-group">
+                                  <div class="form-group my-5">
                                     <label for="selectQuantity"></label>
                                     <select class="form-control" id="selectQuantity" name="sellist3">
                                       <option>1</option>
@@ -184,10 +185,7 @@
                                     </select>                              
                                   </div>
                                 </form>
-                              </td>
-                                <td>
-                                  <button type="button" class="btn"><i class="fa fa-lg fa-trash" aria-hidden="true"></i></button>
-                              </td>                        
+                              </td>                                                       
                             </tr>
                           </tbody>
                   

@@ -18645,5 +18645,24 @@ a .card img {
     flex-basis: 0%;
   }
 }
+#price {
+  text-align: center;
+  vertical-align: middle;
+}
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+}
 
 /*# sourceMappingURL=styles.css.map */

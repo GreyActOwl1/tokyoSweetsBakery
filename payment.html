@@ -12,23 +12,6 @@
   <link rel="stylesheet" href="css/styles.css" />
   <!-- endbuild -->
   <!-- fonts from google go bellow-->
-  <style>
-    .inputWithIcon input[type="text"] {
-      padding-left: 40px;
-    }
-
-    .inputWithIcon {
-      position: relative;
-    }
-
-    .inputWithIcon i {
-      position: absolute;
-      left: 0;
-      top: 8px;
-      padding: 9px 8px;
-      color: #aaa;
-    }
-  </style>
 </head>
 
 <body>
@@ -68,14 +51,12 @@
           <i class="fa fa-shopping-cart"></i> <span class="d-inline d-md-none d-lg-inline">Your Cart</span>
         </button>
       </a>
-
-
     </nav>
   </header>
   <main>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb py-5">
-        <li class="breadcrumb-item"><a href="cart.html">1.Shopping Cart</a></li>
+        <li class="breadcrumb-item"><a href="cart.html">1. Shopping Cart</a></li>
         <li class="breadcrumb-item"><a href=shipping.html>2. Shipping Details</a></li>
         <li class="breadcrumb-item active" aria-current="page">3. Payment Options</li>
       </ol>
@@ -91,168 +72,151 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-4">
-                  <img class="d-flex img-thumbnail" 
+                  <img class="d-flex img-thumbnail"
                     src="https://afewshortcuts.com/wp-content/uploads/2017/10/monster-cookies-1-4-500x500.jpg"
                     alt="cookies" />
                 </div>
                 <div>
-                  <p> Monster Cookies </p>
+                  <p> Monster Cookies</p>
                   <p>Qty:1</p>
                 </div>
               </div>
               <div class="row mt-3">
                 <div class="col-4">
                   <img class="d-flex img-thumbnail"
-                    src="https://afewshortcuts.com/wp-content/uploads/2017/10/monster-cookies-1-4-500x500.jpg"
+                    src="https://www.friars.co.uk/images/friars-hand-made-chocolate-assortment-24-chocolates-p692-12449_related.jpg"
                     alt="cookies" />
                 </div>
                 <div>
-                  <p> Monster Cookies </p>
+                  <p> Chocolate Set</p>
                   <p>Qty:1</p>
                 </div>
               </div>
               <div class="row mt-3">
                 <div class="col-4">
                   <img class="d-flex img-thumbnail"
-                    src="https://afewshortcuts.com/wp-content/uploads/2017/10/monster-cookies-1-4-500x500.jpg"
-                    alt="cookies" />
+                    src="https://whyzee.com.sg/wp-content/uploads/2020/11/Nutella-Cupcakes.jpg" alt="cupcakes" />
                 </div>
                 <div>
-                  <p> Monster Cookies </p>
+                  <p> Cupcakes</p>
                   <p>Qty:1</p>
                 </div>
-              </div>              
+              </div>
             </div>
             <div id="couponAccordion">
-                      
               <div class="card" id="couponHeading">
                 <h5 class="mb-0 px-1">
-                  <button class="btn" data-toggle="collapse" data-target="#couponCollapse" aria-expanded="false" aria-controls="couponCollapse">
-                   Coupon Code:
-                   <i class="fa fa-angle-down fa-lg"></i>
+                  <button class="btn" data-toggle="collapse" data-target="#couponCollapse" aria-expanded="false"
+                    aria-controls="couponCollapse">
+                    Coupon Code:
+                    <i class="fa fa-angle-down fa-lg"></i>
                   </button>
                 </h5>
               </div>
-          
-              <div id="couponCollapse" class="collapse hide" aria-labelledby="couponHeading" data-parent="#couponAccordion">
+              <div id="couponCollapse" class="collapse hide" aria-labelledby="couponHeading"
+                data-parent="#couponAccordion">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="couponInput" class="col-form-label"></label>
                     <input type="text" class="form-control" placeholder="Enter Code" id="couponInput">
-                </div>
+                  </div>
                 </div>
               </div>
-            
-          </div>
-            <div class="card-footer">
-              subtotal num </br>
-              shipping num </br>
-              taxes num
             </div>
             <div class="card-footer">
-              total num
+              Subtotal: $45 </br>
+              Shipping: 0 </br>
+              Taxes: $12
+            </div>
+            <div class="card-footer">
+              Total: $57
             </div>
           </div>
         </div>
+
         <div class="col">
           <h5>Payment Method</h5>
           <form class="needs-validation" id="paymentInfo" action="#" novalidate>
             <div class="card my-3">
-              <div class="card-body">               
-                
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="creditCard" checked>
-                      <label class="form-check-label" for="creditCard">
-                        Credit Card
-                      </label>
+              <div class="card-body">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="creditCard" checked>
+                    <label class="form-check-label" for="creditCard">
+                      Credit Card
+                    </label>
+                  </div>
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <div class="form-row">
+                  <div class="form-group col-sm-6 mt-2">
+                    <div class="inputWithIcon">
+                      <input type="text" name="creditCardInput" class="form-control" placeholder=" 0000 0000 0000 0000"
+                        aria-required="true" required> <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      <label for="creditCardInput" class="form-label"></label>
+                      <div class="invalid-feedback">
+                        Please provide a valid credit card number.
+                      </div>
                     </div>
                   </div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    <div class="form-row">
-                      <div class="form-group col-sm-6 mt-2">
-                        <div class="inputWithIcon">
-                          <input type="text" name="creditCardInput" class="form-control" placeholder=" 0000 0000 0000 0000" aria-required="true"
-                            required> <i class="fa fa-credit-card" aria-hidden="true"></i>
-                        <label for="creditCardInput" class="form-label"></label>
-                        <div class="invalid-feedback">
-                          Please provide a valid credit card number.
-                        </div>
-                        </div>
-                      </div>
-                      <div class="form-group col-6 col-sm-3 mt-2 ">                      
-                      <input type="text" name="expirationDate" placeholder="mm/yy" class="form-control" aria-required="true" required>
-                      <label for="expirationDate" class="form-label"></label>
-                      <div class="invalid-feedback">
-                        Please provide the card's expiration date.
-                      </div>
-                      </div>
-                                                      
-                      <div class=" form-group col-6 col-sm-3 mt-2">                      
-                      <input type="text" name="cardVerficationValue" placeholder="CVV" class="form-control" aria-required="true" required>
-                      <label for="cardVerficationValue" class="form-label"></label>
-                      <div class="invalid-feedback">
-                        Please provide the card's CVV.
-                      </div>  
-                      </div>                                
+                  <div class="form-group col-6 col-sm-3 mt-2 ">
+                    <input type="text" name="expirationDate" placeholder="mm/yy" class="form-control"
+                      aria-required="true" required>
+                    <label for="expirationDate" class="form-label"></label>
+                    <div class="invalid-feedback">
+                      Please provide the card's expiration date.
+                    </div>
                   </div>
-                  <div class="form-row">
-                    <div class="form-group col-12">                      
-                      <input type="text" name="cardHolderName" class="form-control" placeholder="Card Holder Name" aria-required="true" required>
-                      <label for="cardHolderName" class="form-label"></label>
-                       <div class="invalid-feedback">
-                        Please provide the card holder's name.
-                      </div>
+                  <div class=" form-group col-6 col-sm-3 mt-2">
+                    <input type="text" name="cardVerficationValue" placeholder="CVV" class="form-control"
+                      aria-required="true" required>
+                    <label for="cardVerficationValue" class="form-label"></label>
+                    <div class="invalid-feedback">
+                      Please provide the card's CVV.
+                    </div>
                   </div>
-                  </div>         
-                    
-                  
-         
-            
-             
-                
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <input type="text" name="cardHolderName" class="form-control" placeholder="Card Holder Name"
+                      aria-required="true" required>
+                    <label for="cardHolderName" class="form-label"></label>
+                    <div class="invalid-feedback">
+                      Please provide the card holder's name.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            
-              <div class="card my-3">
-                <div class="card-body">
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="payPal">
-                      <label class="form-check-label" for="payPal">
-                        PayPal
-                      </label>
-                    </div>
-                  </div>
-                  <div id="smart-button-container">
-                    <div style="text-align: center;">
-                      <div id="paypal-button-container"></div>
-                    </div>
+            <div class="card my-3">
+              <div class="card-body">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payPal">
+                    <label class="form-check-label" for="payPal">
+                      PayPal
+                    </label>
                   </div>
                 </div>
+                <div id="smart-button-container">
+                  <div style="text-align: center;">
+                    <div id="paypal-button-container"></div>
+                  </div>
                 </div>
-               
+              </div>
+            </div>
 
-
-            
-
-          
-          <div class="form-group ">
-            <button type="submit" class="btn btn-primary btn-lg px-5">Pay Now</button>
-            <button type="button" class="btn btn-secondary btn-lg px-5">Cancel</button>
-          </div>
-        </form>
+            <div class="form-group ">
+              <button type="submit" class="btn btn-primary btn-lg px-5">Pay Now</button>
+              <button type="button" class="btn btn-secondary btn-lg px-5">Cancel</button>
+            </div>
+          </form>
 
         </div>
-        
+
       </div>
-
-
     </div>
-
-    </div>
-
 
   </main>
   <footer>
@@ -294,66 +258,6 @@
   <script src="./js/scripts.js" type="module"></script>
   <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
     data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'rect',
-          color: 'gold',
-          layout: 'horizontal',
-          label: 'paypal',
-
-        },
-
-        createOrder: function (data, actions) {
-          return actions.order.create({
-            purchase_units: [{ "amount": { "currency_code": "USD", "value": 1 } }]
-          });
-        },
-
-        onApprove: function (data, actions) {
-          return actions.order.capture().then(function (orderData) {
-
-            // Full available details
-            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-            // Show a success message within this page, e.g.
-            const element = document.getElementById('paypal-button-container');
-            element.innerHTML = '';
-            element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-            // Or go to another URL:  actions.redirect('thank_you.html');
-
-          });
-        },
-
-        onError: function (err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script>
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script>
   <!-- endbuild -->
 </body>
 

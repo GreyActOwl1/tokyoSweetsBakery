@@ -18645,6 +18645,7 @@ a .card img {
     flex-basis: 0%;
   }
 }
+
 #price {
   text-align: center;
   vertical-align: middle;
@@ -18664,5 +18665,6 @@ a .card img {
   padding: 9px 8px;
   color: #aaa;
 }
+
 
 /*# sourceMappingURL=styles.css.map */

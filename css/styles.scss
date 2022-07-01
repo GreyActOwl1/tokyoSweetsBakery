@@ -1,0 +1,321 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Modifications to Bootstrap scss variables and maps go here
+//example $primary: pink; would change the color of all elements that use the primary color
+@import "../node_modules/bootstrap/scss/bootstrap";
+body {
+  height: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+}
+.row {
+  max-width: 1600px;
+}
+.col {
+  max-width: 1600px;
+}
+nav.navbar {
+  width: 100%;
+  justify-content: flex-start;
+
+  form {
+    flex-flow: nowrap;
+    input {
+      flex-shrink: 1;
+    }
+    @media (max-width: 576px) {
+      flex-wrap: nowrap;
+      max-width: 45%;
+    }
+  }
+
+  li {
+    position: relative;
+    flex-shrink: 1;
+    button {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+    }
+  }
+  @media (min-width: 768px) {
+    li:not(:nth-last-child(-n + 2))::after {
+      content: "";
+      position: absolute;
+      top: 35%;
+      right: -2px;
+      width: 2px;
+      height: 30%;
+      background-color: black;
+    }
+  }
+}
+footer {
+  a {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  a:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+.half-size {
+  width: 50%;
+}
+.no-border {
+  border: none;
+}
+.parallax-background {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.parallax-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  max-height: 500px;
+  overflow: hidden;
+  h1 {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    z-index: 1;
+  }
+  .parallax-img-background {
+    min-height: 100%;
+    width: 150%;
+    object-fit: cover;
+  }
+  .parallax-static {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    max-width: 80%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+    img {
+      max-width: 25%;
+    }
+    @media (min-width: 576px) {
+      top: 20%;
+      left: 10%;
+      height: 60%;
+      max-width: 60%;
+    }
+  }
+  .product-rating {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .product-rating .media-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    overflow-y: scroll;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+  }
+  .product-rating img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+a.decorated {
+  min-width: 30%;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 75%;
+    left: 0;
+    background-color: rgba(108, 117, 125);
+    z-index: -1;
+  }
+}
+.side-scrolling-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .side-scrolling-display-left {
+    display: flex;
+    order: 1;
+    width: 10%;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .side-scrolling-display-right {
+    order: 3;
+    width: 10%;
+    cursor: pointer;
+  }
+  .side-scrolling-display-content {
+    order: 2;
+    width: 80%;
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hide-content {
+    display: none;
+  }
+}
+.featured-products {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 1);
+  flex-shrink: 0;
+  img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+  &:hover .card-hover-reveal {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.card-hover-reveal {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: scroll;
+  a {
+    font-style: italic;
+    color: white;
+  }
+}
+.card-img-top {
+  max-width: 100%;
+  max-height: 100%;
+}
+.ratings-display {
+  text-shadow: none;
+  color: transparent;
+}
+.scroll-appear {
+  display: none;
+}
+.shop-search {
+  height: 50vh;
+  background-image: url("/img/brooke-lark-unsplash-search-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-width: 576px) {
+    height: 40vh;
+  }
+}
+.main-search {
+  display: flex;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+}
+.line-decoration {
+  width: 40%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.card-tab {
+  color: black;
+}
+#current-selection {
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+}
+#pills-tabs {
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+}
+#pills-tabContent {
+  height: 100%;
+}
+.pill-link {
+  // set children not to accept pointer events allowing to easily detect what data to load
+  & > * {
+    pointer-events: none;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+  }
+}
+.pill-link.active {
+  .card-tab {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  p {
+    background-color: white;
+    text-decoration: underline;
+  }
+}
+a {
+  .card {
+    border: none;
+    img {
+      height: 170px;
+      object-fit: cover;
+    }
+  }
+}
+.product-information {
+  width: 300px;
+  img {
+    width: 200px;
+  }
+}
+.tab-content > .active {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.tab-pane {
+  a {
+    color: black;
+  }
+}
+#buyNow .modal-dialog {
+  width: 90%;
+  max-width: none;
+}
+#modal-buy-image {
+  max-width: 300px;
+  width: 100%;
+}
+#modal-buy-reviews {
+  .media {
+    gap: 1rem;
+    flex-wrap: wrap;
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+    .media-body {
+      flex-basis: 100%;
+      @media (min-width: 768px) {
+        flex-basis: 0%;
+      }
+    }
+  }
+}

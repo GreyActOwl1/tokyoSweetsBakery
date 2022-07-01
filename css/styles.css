@@ -18479,6 +18479,11 @@ a.decorated:after {
   display: none;
 }
 
+.controls i {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .featured-products {
   width: 300px;
   height: 300px;

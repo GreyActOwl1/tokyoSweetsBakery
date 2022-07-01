@@ -169,6 +169,12 @@ a.decorated {
     display: none;
   }
 }
+.controls {
+  i {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
 .featured-products {
   width: 300px;
   height: 300px;
@@ -212,6 +218,7 @@ a.decorated {
   text-shadow: none;
   color: transparent;
 }
+
 .scroll-appear {
   display: none;
 }

@@ -42,11 +42,11 @@ const data = {
         ],
       },
       {
-        name: "Rye",
-        rating: "4.2",
+        name: "Whole Grain",
+        rating: "3.7",
         price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        img: "./img/young-shih-unsplash-whole-grain.jpg",
+        description: "Perfect combination of tastety and healthy",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -65,11 +65,11 @@ const data = {
         ],
       },
       {
-        name: "Rye",
-        rating: "4.2",
-        price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        name: "Sourdough",
+        rating: "5",
+        price: "$10",
+        img: "./img/tommaso-urli-unsplash-sourdough.jpg",
+        description: "Made with our own special in store yeast. We have been using it for over 20 years.",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -88,11 +88,11 @@ const data = {
         ],
       },
       {
-        name: "Rye",
-        rating: "4.2",
-        price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        name: "Milk Bread",
+        rating: "5",
+        price: "$7",
+        img: "./img/charles-chen-unsplash-milk-bread.jpg",
+        description: "Not your supermarket's wonderbread. Soft, slightly sweet, and fluffy without the approximate 500 perservatives.",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -113,11 +113,12 @@ const data = {
     ],
     pastery: [
       {
-        name: "Rye",
-        rating: "4.2",
-        price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        name: "Taiyaki",
+        rating: "5",
+        price: "$10",
+        img: "./img/kelly-visel-unsplash-taiyaki-thumb.jpg",
+        description:
+          "A traditional Japanese pasterie filled with your choice of filling. There is matcha, custard, and sweet bean flavors available and comes in a pack of 3",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -136,11 +137,12 @@ const data = {
         ],
       },
       {
-        name: "Rye",
-        rating: "4.2",
+        name: "Chocolate Rolls",
+        rating: "4.5",
         price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        img: "./img/otto-norin-unsplash-chocolate-rolls.jpg",
+        description:
+          "We could spend a long time talking about how delicous these rolls are but that would be a waste. After all a picture is worth 1000 words.",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -159,11 +161,12 @@ const data = {
         ],
       },
       {
-        name: "Rye",
-        rating: "4.2",
-        price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        name: "Chestnut Cupcake",
+        rating: "4.5",
+        price: "$5",
+        img: "./img/jr-r-unsplash-cupcake.jpg",
+        description:
+          "Love Ferrero Rocher? You'll love this cupcake. In fact you might love a dozen of them right now. If only we had perfected telportation. Order now and get them ASAP",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -182,11 +185,11 @@ const data = {
         ],
       },
       {
-        name: "Rye",
+        name: "Macarons",
         rating: "4.2",
         price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        img: "./img/heather-barnes-unsplash-macarons.jpg",
+        description: "You know exactly what you are getting when you clicked on this image. Enjoy a special assortment of our flavors.",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -207,11 +210,11 @@ const data = {
     ],
     seasonal: [
       {
-        name: "Rye",
-        rating: "4.2",
-        price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        name: "Berry Tart",
+        rating: "5",
+        price: "$7",
+        img: "./img/slashio-photography-unsplash-tart-thumb.jpg",
+        description: "Our special sakura inspired tart. Full of berry goodness.",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -230,11 +233,11 @@ const data = {
         ],
       },
       {
-        name: "Rye",
-        rating: "4.2",
-        price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        name: "Blue Berry Cheese Cake",
+        rating: "4.5",
+        price: "$25",
+        img: "./img/didi-miam-unsplash-seasonal-blueberry-cheesecake.jpg",
+        description: "This simple classic is simply delicious.",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -253,11 +256,11 @@ const data = {
         ],
       },
       {
-        name: "Rye",
-        rating: "4.2",
-        price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        name: "Carmalized Walnut Cupcake",
+        rating: "4",
+        price: "$7",
+        img: "./img/lore-schodts-unsplash-seasonal-cupcake.jpg",
+        description: "Vanilla based cupcake with the delicious crunchy topping of carmalized walnuts.",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",
@@ -276,11 +279,11 @@ const data = {
         ],
       },
       {
-        name: "Rye",
+        name: "Chocolate Pillows",
         rating: "4.2",
         price: "$15",
-        img: "./img/wesual-click-rye-thumb.jpg",
-        description: "This rustic, artisanal, healthy,... forget that it is delicous and freshly made",
+        img: "./img/chris-hardy-unsplash-seasonal-chocolate-pillows.jpg",
+        description: "These chocolate pillows will have you thinking that you are dreaming.",
         reviews: [
           {
             avatar: "./img/GAN-bob-smith.jpg",

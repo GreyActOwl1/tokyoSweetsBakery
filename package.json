@@ -9,7 +9,7 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin about.html -d dist --htmlmin -o dist/about.html && usemin cart.html -d dist --htmlmin -o dist/cart.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin payment.html -d dist --htmlmin -o dist/payment.html && usemin shipping.html -d dist --htmlmin -o dist/shipping.html, && usemin shop.html -d dist --htmlmin -o dist/shop.html",
     "lite": "lite-server",
     "mac-scss": "sass css:css",
     "scss": "sass css:css",

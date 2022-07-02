@@ -64,11 +64,11 @@
 <div class="row row-content">
     <div class="col-12">
         <h2>Send us a Message</h2>
-        <p>Have a suggestion? Don't see what your looking for? Just want to say hi? Let us know below.</p>
+        <p>Have a suggestion? Can't find what your looking for? Just want to say hi? Let us know below.</p>
         <hr />
     </div>
-    <div class="col-md-10">
-        <form>
+    <div class="col-md-10 mt-1">
+        <form class="needs-validation" id=messageForm novalidate>
             <div class="form-group row">
                 <label for="firstName" class="col-md-2 col-form-label">First Name</label>
                 <div class="col-md-10">
@@ -90,17 +90,23 @@
                     <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
                 </div>
             </div>
-            <div class="form-group row">
+            <div  class="form-group row">
                 <label for="email" class="col-md-2 col-form-label">Email</label>
                 <div class="col-md-10">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                </div>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" aria-required="true" required/>
+                    <div class="invalid-feedback">
+                      Please provide a valid email address.
+                    </div>
+                </div>                
             </div>            
             <div class="form-group row">
                 <label for="feedback" class="col-md-2 col-form-label">Your Message</label>
                 <div class="col-md-10">
-                    <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
-                </div>
+                    <textarea class="form-control" id="feedback" name="feedback" rows="8" aria-required="true" required></textarea>
+                    <div class="invalid-feedback">
+                      Please add a message.
+                    </div>
+                </div>               
             </div>
             <div class="form-group row">
                 <div class="offset-md-2 col-md-10">

@@ -8,22 +8,11 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <style>
-        nav {
-         background-color: #A8BEFF
-        }
-        body{
-         background-color: #fffaf0;
-        }
-        footer {
-         background-color: #A8BEFF;
-        }
-      </style>
+    <link rel="stylesheet" href="css/styles.css" />   
     <!-- endbuild -->
     <!-- fonts from google go bellow-->
   </head>
-  <body >
+  <body class="mw-100">
   <header class="sticky-top">
       <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="/">TS Bakery</a>
@@ -58,12 +47,10 @@
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact</a>
             </li>
-            <li class="nav-item">
-             
+            <li class="nav-item">             
                 <a class="btn btn-secondary" href="./cart.html">
                   <i class="fa fa-shopping-cart"></i> <span class="d-inline d-md-none d-lg-inline">Your Cart</span>
-                </a>
-              
+                </a>              
             </li>
           </ul>
         </div>
@@ -71,9 +58,9 @@
     </header>
     <main>
         <div class="container-fluid p-0">
-            <div class="row">
-                <div class="col">
-                <div class="jumbotron jumbotron-fluid shop-search">
+            <div class="row mx-0 mw-100 p-0">
+                <div class="col mx-auto mw-100 p-0">
+                <div class="jumbotron jumbotron-fluid shop-search mw-100  ">
                     <div class="container d-flex flex-column align-items-center">
                         <h1 class="display-6 display-md-4">Find What You Have Been Dreaming Of</h1>
                         <div class="line-decoration my-3"></div>
@@ -87,12 +74,12 @@
                 </div>
                 </div>
             </div>
-            <div class="row my-5">
+            <div class="row my-5 mx-auto">
                 <div class="col">
                     <h2 class="col-12 display-6 display-md-4 text-center">Categories</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mx-auto">
                 <div class="col d-flex flex justify-content-center mb-5"> 
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item mx-3" role="presentation">
@@ -132,7 +119,7 @@
                 </div>
             </div>
 
-            <div class="row no-gutters mb-3">
+            <div class="row no-gutters mb-3 mw-100 mx-auto">
                 <div class="col-12 col-md-4 p-3" id="current-selection">
                     <div>
                         <h3>Fresh Bread</h3>
@@ -154,7 +141,7 @@
     </main>
 
     <footer class="container-fluid pt-5">
-        <div class="row">
+        <div class="row mx-auto">
           <div class="col-12  col-md-4">
               <div class="card no-border flex-row flex-md-column">
                 <div class="embed-responsive embed-responsive-21by9">
@@ -169,14 +156,14 @@
                 <p>&copy; Tokyo Sweets Bakery</p>
               </div>
           </div>
-          <div class="col-12 align-items-start col-md-4 d-flex-column align-items-md-center">
-            <h3 class="text-md-center">MAIN MENU</h3>
-            <ul class="nav d-flex flex-md-column">
-              <a class="nav-link pl-0 text-center active pl-md-3" href="#">Home </a>
-              <a class="nav-link text-center" href="./about.html">About</a>
-              <a class="nav-link text-center" href="#">Shop</a>
-  
-              <a class="nav-link text-center" href="#">Help</a>
+          <div class="col-12 col-md-4 d-flex-column">
+            <h3 class="text-center">MAIN MENU</h3>
+            <ul class="nav d-flex flex-md-column text-center justify-content-center">
+              <a class="nav-link active" href="./index.html">Home </a>
+              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link" href="#">Shop</a>  
+              <a class="nav-link text-center" href="./contact.html">Contact Us</a>
+            </ul>
           </div>
           <div class="col-12 align-items-start col-md-4 d-flex-column align-items-md-center text-center">
             <h3 class="text-md-center">FIND US ON</h3>

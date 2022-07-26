@@ -330,11 +330,29 @@ a {
   }
 }
 nav {
-  background-color: #A8BEFF
+  background-color: #A8BEFF;
  }
  body{
   background-color: #c9c0bb;
+  max-width:100%;
  }
  footer {
   background-color: #A8BEFF;
+  padding-top:5rem;
+ }
+ footer .row{
+   margin: auto;
+ }
+ .main-menu-list{
+  display: flex;
+  flex-direction:row;
+  text-align: center;
+  justify-content: center;
+ }
+ .col-footer-social{
+  display: block;
+  flex-direction:row;
+  align-items:flex-start;
+  justify-content: center;
+  text-align:center;
  }

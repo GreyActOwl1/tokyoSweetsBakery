@@ -14,7 +14,7 @@
   <!-- fonts from google go bellow-->
 </head>
 
-<body>
+<body class="mw-100">
   <header class="sticky-top">
     <nav class="navbar navbar-expand-md navbar-light">
       <a class="navbar-brand" href="#">TS Bakery</a>
@@ -43,11 +43,9 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item">
-
             <a class="btn btn-secondary" href="./cart.html">
               <i class="fa fa-shopping-cart"></i> <span class="d-inline d-md-none d-lg-inline">Your Cart</span>
             </a>
-
           </li>
         </ul>
       </div>
@@ -56,70 +54,70 @@
   <main>
 
     <!-- ADD NEW PAGE CONTENTS HERE -->
-    <div class="container">
-      
-    </div>
-    <div class="row row-content pl-5 pt-4">
-      <div class="col-12">
-        <h2>Send us a Message</h2>
-        <p>Have a suggestion? Can't find what your looking for? Just want to say hi? Let us know below.</p>
-        <hr />
-      </div>
-      <div class="col-md-10 mt-1">
-        <form class="needs-validation" id=messageForm novalidate>
-          <div class="form-group row">
-            <label for="firstName" class="col-md-2 col-form-label">First Name</label>
-            <div class="col-md-10">
-              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-            <div class="col-md-10">
-              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
-            <div class="col-5 col-md-3">
-              <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
-            </div>
-            <div class="col-7">
-              <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="email" class="col-md-2 col-form-label">Email*</label>
-            <div class="col-md-10">
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email" aria-required="true"
-                required />
-              <div class="invalid-feedback">
-                Please provide a valid email address.
+    <div class="container-fluid">
+      <div class="row row-content pl-5 pt-4">
+        <div class="col-12">
+          <h2>Send us a Message</h2>
+          <p>Have a suggestion? Can't find what your looking for? Just want to say hi? Let us know below.</p>
+          <hr />
+        </div>
+        <div class="col-md-10 mt-1">
+          <form class="needs-validation" id=messageForm novalidate>
+            <div class="form-group row">
+              <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
               </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="feedback" class="col-md-2 col-form-label">Your Message*</label>
-            <div class="col-md-10">
-              <textarea class="form-control" id="feedback" name="feedback" rows="8" aria-required="true"
-                required></textarea>
-              <div class="invalid-feedback">
-                Please add a message.
+            <div class="form-group row">
+              <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
               </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <div class="offset-md-2 col-md-10">
-              <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-group row">
+              <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+              <div class="col-5 col-md-3">
+                <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+              </div>
+              <div class="col-7">
+                <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+              </div>
             </div>
-          </div>
-        </form>
+            <div class="form-group row">
+              <label for="email" class="col-md-2 col-form-label">Email*</label>
+              <div class="col-md-10">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" aria-required="true"
+                  required />
+                <div class="invalid-feedback">
+                  Please provide a valid email address.
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="feedback" class="col-md-2 col-form-label">Your Message*</label>
+              <div class="col-md-10">
+                <textarea class="form-control" id="feedback" name="feedback" rows="8" aria-required="true"
+                  required></textarea>
+                <div class="invalid-feedback">
+                  Please add a message.
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-md-2 col-md-10">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
+  
     </div>
-
+   
   </main>
   <footer class="container-fluid pt-5">
-    <div class="row">
+    <div class="row mx-auto">
       <div class="col-12  col-md-4">
           <div class="card no-border flex-row flex-md-column">
             <div class="embed-responsive embed-responsive-21by9">
@@ -134,14 +132,14 @@
             <p>&copy; Tokyo Sweets Bakery</p>
           </div>
       </div>
-      <div class="col-12 align-items-start col-md-4 d-flex-column align-items-md-center">
-        <h3 class="text-md-center">MAIN MENU</h3>
-        <ul class="nav d-flex flex-md-column">
-          <a class="nav-link pl-0 text-center active pl-md-3" href="#">Home </a>
-          <a class="nav-link text-center" href="#">About</a>
-          <a class="nav-link text-center" href="/shop.html">Shop</a>
+      <div class="col-12 col-md-4 d-flex-column">
+        <h3 class="text-center">MAIN MENU</h3>
+        <ul class="nav d-flex flex-md-column text-center justify-content-center">
+          <a class="nav-link" href="./index.html">Home </a>
+          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link" href="/shop.html">Shop</a>
 
-          <a class="nav-link text-center" href="#">Help</a>
+          <a class="nav-link" href="#">Help</a>
       </div>
       <div class="col-12 align-items-start col-md-4 d-flex-column align-items-md-center text-center">
         <h3 class="text-md-center">FIND US ON</h3>

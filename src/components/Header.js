@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <Navbar light sticky="top" expand="lg">
-      <NavbarBrand className="ml-5" href="/">
+      <NavbarBrand className="" href="/">
         <h1 className="mt-1">TS Bakery</h1>
       </NavbarBrand>
       <Form className="mr-auto d-flex" inline>        

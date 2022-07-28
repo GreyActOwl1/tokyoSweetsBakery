@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer>
       {" "}
-      <Container className="pt-5" fluid>
+      <Container className="" fluid>
         <Row className="mx-auto">
           <Col md="4" className="text-center">
           <Iframe 

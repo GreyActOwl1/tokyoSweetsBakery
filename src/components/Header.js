@@ -6,28 +6,19 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  Form
+  Form,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import '../logo.svg'
+import logo from "../app/assets/img/TS&B-logo.png";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <Navbar light sticky="top" expand="lg">
       <NavbarBrand className="d-inline-flex" href="/">
-
-        <img
-          src="../logo.svg"
-          alt=""
-          href="/"
-          width="30"
-          height="30"
-          className=""
-        />{' '}
-        <div className="d-none d-sm-block">
-          TS Bakery</div>
-
+        <img src={logo} alt="" href="/" width="30" height="30" className="" />{" "}
+        <div className="d-none d-sm-block pl-2">TS Bakery</div>
       </NavbarBrand>
       <Form className="mr-auto d-flex" inline>
         <input
@@ -47,19 +38,31 @@ const Header = () => {
       <Collapse isOpen={menuOpen} navbar>
         <Nav className="ms-auto" navbar>
           <NavItem>
-            <NavLink className="nav-link" to="/">Home</NavLink>
+            <NavLink className="nav-link" to="/">
+              Home
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/about">About</NavLink>
+            <NavLink className="nav-link" to="/about">
+              About
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/contact">Contact Us</NavLink>
+            <NavLink className="nav-link" to="/contact">
+              Contact Us
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/shop">Shop</NavLink>
+            <NavLink className="nav-link" to="/shop">
+              Shop
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link btn btn-secondary" to="/cart">  <i className="fa fa-shopping-cart"></i> <span className="d-inline d-md-none d-lg-inline">Your Cart</span></NavLink>
+            <NavLink className="nav-link btn btn-secondary" to="/cart">
+              {" "}
+              <i className="fa fa-shopping-cart"></i>{" "}
+              <span className="d-inline d-md-none d-lg-inline">Your Cart</span>
+            </NavLink>
           </NavItem>
         </Nav>
       </Collapse>

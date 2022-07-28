@@ -1,8 +1,8 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import { Counter } from './features/counter/Counter';
-import './App.css';
-import "./styles.css";
+import './app/assets/css/App.css';
+import "./app/assets/css/styles.css";
 import { Routes, Route, } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";

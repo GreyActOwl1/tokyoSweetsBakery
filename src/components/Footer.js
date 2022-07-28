@@ -14,7 +14,6 @@ import {
 import { NavLink } from "react-router-dom";
 // import "font-awesome/css/font-awesome.min.css";
 import { Link } from "react-router-dom";
-import "../styles.css";
 import Iframe from 'react-iframe'
 
 const Footer = () => {

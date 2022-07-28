@@ -9,16 +9,27 @@ import {
   Form
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-
+import '../logo.svg'
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <Navbar light sticky="top" expand="lg">
-      <NavbarBrand className="" href="/">
-        <h1 className="mt-1">TS Bakery</h1>
+      <NavbarBrand className="d-inline-flex" href="/">
+
+        <img
+          src="../logo.svg"
+          alt=""
+          href="/"
+          width="30"
+          height="30"
+          className=""
+        />{' '}
+        <div className="d-none d-sm-block">
+          TS Bakery</div>
+
       </NavbarBrand>
-      <Form className="mr-auto d-flex" inline>        
+      <Form className="mr-auto d-flex" inline>
         <input
           className="form-control mr-sm-2"
           type="search"
@@ -46,7 +57,7 @@ const Header = () => {
           </NavItem>
           <NavItem>
             <NavLink className="nav-link" to="/shop">Shop</NavLink>
-          </NavItem>          
+          </NavItem>
           <NavItem>
             <NavLink className="nav-link btn btn-secondary" to="/cart">  <i className="fa fa-shopping-cart"></i> <span className="d-inline d-md-none d-lg-inline">Your Cart</span></NavLink>
           </NavItem>

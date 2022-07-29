@@ -31,7 +31,7 @@ const Footer = () => {
         className="myClassname"
         display="initial"
         position="relative"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
         />
             <p>505 Moore Street, Pocahontas, VA 24605, USA</p>
             <p>&copy; Tokyo Sweets Bakery</p>
